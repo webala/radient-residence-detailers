@@ -54,7 +54,7 @@ export default function Hero() {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Don't let the dust settle
+              Don't let the dust settle !!!
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
