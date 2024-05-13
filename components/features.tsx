@@ -1,6 +1,12 @@
+import { FaHouseChimney } from "react-icons/fa6";
+import { RiSofaLine } from "react-icons/ri";
+import { GiRedCarpet } from "react-icons/gi";
+import { MdCleaningServices } from "react-icons/md";
+import { LuConstruction, LuPartyPopper } from "react-icons/lu";
+import { FaRegBuilding } from "react-icons/fa";
 export default function Features() {
   return (
-    <section>
+    <section id="services">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
@@ -23,36 +29,15 @@ export default function Features() {
               data-aos="fade-up"
               data-aos-anchor="[data-aos-id-blocks]"
             >
-              <svg
-                className="w-16 h-16 mb-4"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  className="fill-current text-purple-600"
-                  width="64"
-                  height="64"
-                  rx="32"
-                />
-                <path
-                  className="stroke-current text-purple-100"
-                  d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924"
-                  strokeLinecap="square"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                />
-                <path
-                  className="stroke-current text-purple-300"
-                  d="M43 42h-9M43 37h-9"
-                  strokeLinecap="square"
-                  strokeWidth="2"
-                />
-              </svg>
+              <div className="bg-purple-600 flex items-center justify-center w-16 h-16 rounded-full">
+                <FaHouseChimney size={21} />
+              </div>
 
-              <h4 className="h4 mb-2">House Cleaning</h4>
+              <h4 className="h4 my-2 md:my-5 text-center">House Cleaning</h4>
               <p className="text-lg text-gray-400 text-center">
-                Dusting windows, wiping surfaces, vacuuming and mopping floors
+                Comprehensive service ensuring every corner is spotless,
+                creating a fresh and inviting atmosphere for you and your
+                family.
               </p>
             </div>
 
@@ -63,40 +48,15 @@ export default function Features() {
               data-aos-delay="300"
               data-aos-anchor="[data-aos-id-blocks]"
             >
-              <svg
-                className="w-16 h-16 mb-4"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  className="fill-current text-purple-600"
-                  width="64"
-                  height="64"
-                  rx="32"
-                />
-                <g
-                  transform="translate(22 21)"
-                  strokeLinecap="square"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    className="stroke-current text-purple-100"
-                    d="M17 22v-6.3a8.97 8.97 0 003-6.569A9.1 9.1 0 0011.262 0 9 9 0 002 9v1l-2 5 2 1v4a2 2 0 002 2h4a5 5 0 005-5v-5"
-                  />
-                  <circle
-                    className="stroke-current text-purple-300"
-                    cx="13"
-                    cy="9"
-                    r="3"
-                  />
-                </g>
-              </svg>
-              <h4 className="h4 mb-2">Upholstery Cleaning</h4>
+              <div className="bg-purple-600 flex items-center justify-center w-16 h-16 rounded-full">
+                <RiSofaLine size={21} />
+              </div>
+              <h4 className="h4 my-2 md:my-5 text-center">
+                Upholstery Cleaning
+              </h4>
               <p className="text-lg text-gray-400 text-center">
-                Cleaning sofas, dining seats and tables using dry and wet vacuum
-                to remove stains and debris, and detergent for wiping surfaces
+                Revitalize furniture, removing stains and odors, extending its
+                life while restoring comfort and beauty.
               </p>
             </div>
             {/* 3rd item */}
@@ -106,92 +66,89 @@ export default function Features() {
               data-aos-delay="200"
               data-aos-anchor="[data-aos-id-blocks]"
             >
-              <svg
-                className="w-16 h-16 mb-4"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  className="fill-current text-purple-600"
-                  width="64"
-                  height="64"
-                  rx="32"
-                />
-                <g
-                  transform="translate(21 21)"
-                  strokeLinecap="square"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <ellipse
-                    className="stroke-current text-purple-300"
-                    cx="11"
-                    cy="11"
-                    rx="5.5"
-                    ry="11"
-                  />
-                  <path
-                    className="stroke-current text-purple-100"
-                    d="M11 0v22M0 11h22"
-                  />
-                  <circle
-                    className="stroke-current text-purple-100"
-                    cx="11"
-                    cy="11"
-                    r="11"
-                  />
-                </g>
-              </svg>
-              <h4 className="h4 mb-2">Carpet Cleaning</h4>
+              <div className="bg-purple-600 flex items-center justify-center w-16 h-16 rounded-full">
+                <GiRedCarpet size={21} />
+              </div>
+              <h4 className="h4 my-2 md:my-5 text-center">Carpet Cleaning</h4>
               <p className="text-lg text-gray-400 text-center">
-                Thorough carpet cleaning.
+                Thoroughly sanitize hard-to-reach areas, eliminating grime for
+                an immaculately clean and hygienic space.
               </p>
             </div>
 
             {/* 4th item */}
             <div
-              className="relative flex flex-col items-center lg:col-span-3"
+              className="relative flex flex-col items-center"
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-anchor="[data-aos-id-blocks]"
             >
-              <svg
-                className="w-16 h-16 mb-4"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  className="fill-current text-purple-600"
-                  cx="32"
-                  cy="32"
-                  r="32"
-                />
-                <path
-                  className="stroke-current text-purple-100"
-                  strokeWidth="2"
-                  strokeLinecap="square"
-                  d="M21 23h22v18H21z"
-                  fill="none"
-                  fillRule="evenodd"
-                />
-                <path
-                  className="stroke-current text-purple-300"
-                  d="M26 28h12M26 32h12M26 36h5"
-                  strokeWidth="2"
-                  strokeLinecap="square"
-                />
-              </svg>
-              <h4 className="h4 mb-2">Deep Cleaning</h4>
+              <div className="bg-purple-600 flex items-center justify-center w-16 h-16 rounded-full">
+                <MdCleaningServices size={21} />
+              </div>
+              <h4 className="h4 my-2 md:my-5 text-center">Deep Cleaning</h4>
               <p className="text-lg text-gray-400 text-center">
-                Cleaning the kitchen, bathroom and living area. It
-                also includes vacuuming, window wiping, dusting and floor
-                mopping. They use a dry and wet vacuum for removing easy stains
-                and debris.
+                Renew carpets, lifting dirt and allergens, restoring freshness
+                and softness to your floors.
               </p>
             </div>
 
             {/* 5th item */}
+            <div
+              className="relative flex flex-col items-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-anchor="[data-aos-id-blocks]"
+            >
+              <div className="bg-purple-600 flex items-center justify-center w-16 h-16 rounded-full">
+                <LuConstruction size={21} />
+              </div>
+              <h4 className="h4 my-2 md:my-5 text-center">
+                Post Construction Cleaning
+              </h4>
+              <p className="text-lg text-gray-400 text-center">
+                Remove debris and dust, leaving your newly renovated space
+                spotless and ready for occupancy.
+              </p>
+            </div>
+
+            {/* 6th item */}
+            <div
+              className="relative flex flex-col items-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-anchor="[data-aos-id-blocks]"
+            >
+              <div className="bg-purple-600 flex items-center justify-center w-16 h-16 rounded-full">
+                <LuPartyPopper size={21} />
+              </div>
+              <h4 className="h4 my-2 md:my-5 text-center">
+                Before & After Party Setting and Cleaning
+              </h4>
+              <p className="text-lg text-gray-400 text-center">
+                Assist with setup and handle cleanup, ensuring your space
+                remains pristine before and after your event.
+              </p>
+            </div>
+
+            {/* 7th item */}
+            <div
+              className="relative flex flex-col items-center md:col-span-2 lg:col-span-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-anchor="[data-aos-id-blocks]"
+            >
+              <div className="bg-purple-600 flex items-center justify-center w-16 h-16 rounded-full">
+                <FaRegBuilding size={21} />
+              </div>
+              <h4 className="h4 my-2 md:my-5 text-center">
+                End of Tenancy Cleaning
+              </h4>
+              <p className="text-lg text-gray-400 text-center">
+                Detailed clean to secure your deposit back, leaving the property
+                in pristine condition for the next occupants.
+              </p>
+            </div>
             {/* <div
               className="relative flex flex-col items-center"
               data-aos="fade-up"
